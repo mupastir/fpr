@@ -1,0 +1,159 @@
+@font-face
+{
+    font-family: 'Carefree Cyrillic Normal';
+    font-style: normal;
+    src: url(fonts/11179.ttf);
+}
+
+
+body
+{
+    font-family: Arial, Verdana, Carefree Cyrillic, sans-serif;
+    text-decoration: none;
+    background: url('images/Back_1.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h1.contact
+{
+    font-family: Arial;
+    text-align: center;
+    font-weight: normal;
+    font-size: 300%;
+    color: white;
+}
+
+.form
+{
+    vertical-align: center;
+}
+
+p
+{
+
+    font-family: Roboto;
+    font-size: 300%;
+    color: white;
+    text-align: right;
+    font-weight: bolder;
+    vertical-align: middle;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    width: auto;
+}
+p.intro
+{
+    font-family: Roboto;
+    font-size: 300%;
+    color: black;
+    text-align: right;
+    font-weight: bolder;
+    vertical-align: middle;
+}
+
+p.auth
+{
+    font-family: Roboto;
+    font-size: small;
+    color: white;
+    text-align: right;
+    font-weight: lighter;
+    vertical-align: bottom;
+}
+
+p.cont
+{
+    font-family: Arial;
+    text-align: left;
+    font-weight: normal;
+    font-size: 100%;
+    color: white;
+}
+
+p.about
+{
+    font-family: Arial;
+    text-align: inherit;
+    font-weight: normal;
+    font-size: 100%;
+    color: white;
+}
+
+div.menu
+{
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+    grid-template-rows: 50px;
+}
+#grid
+{
+    display: grid;
+    grid-template-columns: 5% 90% 5%;  /* three columns */
+    grid-template-rows: 1fr 1fr; /* two rows  */
+    height: 800px;
+}
+
+#form
+{
+    background: rgba(86, 99, 100, 0.55);
+}
+div.grid2
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+}
+
+#home
+{
+    background: rgba(86, 99, 100, 0.55);
+}
+
+a.menu:link,
+a.menu:visited{
+    position: center;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 300%;
+    font-weight: lighter;
+    padding: 5px 20px;
+    color: #000000;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;}
+a.menu:hover,
+a.menu:active,
+a.menu:focus{
+    position: inherit;
+    text-decoration: none;
+    color: rgb(219,21,109);
+}
+
+input.image
+{
+    position: center;
+    font-family: Arial;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    background: rgba(86, 99, 100, 0.55);
+    font-size: 300%;
+    margin: 5px 10px 5px 5px;
+    /*position: inherit;*/
+    width: 100%;
+
+}
+
+input.number
+{
+    font-family: Arial;
+    text-align: center;
+    font-size: 300%;
+    margin: 5px 10px 5px 5px;
+    position: inherit;
+    width: 99%;
+}

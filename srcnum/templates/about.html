@@ -1,0 +1,47 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Number</title>
+    <link href="/static/images/favicon.png" rel="shortcut icon" type="image/x-icon.png"/>
+    <link href="/static/main_test.css" type="text/css"
+    rel="stylesheet" />
+</head>
+<body>
+    <!--MENU -->
+    <div class="menu">
+        <div class="grid-item"></div>
+        <div class="grid-item" id="home" style="text-align: center">
+            <a href="/srcnum/" class="menu">HOME</a>
+        </div>
+        <div class="grid-item" id="home" style="text-align: center">
+            <a href="/srcnum/contacts/" class="menu">Contacts</a>
+        </div>
+        <div class="grid-item" id="home" style="text-align: center">
+            <a href="/srcnum/about/" class="menu">About</a>
+        </div>
+    </div>
+
+    <div id="grid">
+        <div class="grid-item"></div>
+        <div class="grid-item" id="home">
+            <p class="about">A <b>happy number</b> is a number defined by the following process: Starting with any <a href="/wiki/Positive_number" class="mw-redirect" title="Positive number">positive</a> <a href="/wiki/Integer" title="Integer">integer</a>, replace the number by the <a href="/wiki/Summation" title="Summation">sum</a> of the squares of its <a href="/wiki/Numerical_digit" title="Numerical digit">digits</a> in <a href="/wiki/Decimal" title="Decimal">base-ten</a>, and repeat the process until the number either equals 1 (where it will stay), or it loops endlessly in a cycle that does not include&nbsp;1. Those numbers for which this process ends in 1 are happy numbers, while those that do not end in 1 are unhappy numbers (or sad numbers).<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
+            <p class="about">For example, 19 is happy, as the associated sequence is:</p>
+            <dl class="about">
+                <dd>1<sup>2</sup> + 9<sup>2</sup> = 82</dd>
+                <dd>8<sup>2</sup> + 2<sup>2</sup> = 68</dd>
+                <dd>6<sup>2</sup> + 8<sup>2</sup> = 100</dd>
+                <dd>1<sup>2</sup> + 0<sup>2</sup> + 0<sup>2</sup> = 1.</dd>
+            </dl>
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item" id="home"></div>
+        <div class="grid-item"></div>
+    </div>
+    <p class="auth">
+        Made by Oleh Perlovskiy
+    </p>
+</body>
+</html>

@@ -1,0 +1,56 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Number</title>
+    <link href="/static/images/favicon.png" rel="shortcut icon" type="image/x-icon.png"/>
+    <link href="/static/main_test.css" type="text/css"
+    rel="stylesheet" />
+</head>
+<body>
+    <!--MENU -->
+    <div class="menu">
+        <div class="grid-item"></div>
+        <div class="grid-item" id="home" style="text-align: center">
+            <a href="/srcnum/" class="menu">HOME</a>
+        </div>
+        <div class="grid-item" id="home" style="text-align: center">
+            <a href="/srcnum/contacts/" class="menu">Contacts</a>
+        </div>
+        <div class="grid-item" id="home" style="text-align: center">
+            <a href="/srcnum/about/" class="menu">About</a>
+        </div>
+    </div>
+
+    <div id="grid">
+        <div class="grid-item"></div>
+        <div class="grid-item" id="home">
+            <p class="intro">
+                Checking number to happiness
+            </p>
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item" id="home">
+            <div class="grid2">
+                <div class="grid-item">
+                    <!--INPUT NUMBER FIELD-->
+                    <form action="/srcnum/get_number/" method="POST" class="form">
+                    {% csrf_token %}
+                        <input type="submit" value="Submit" class="image">
+                        <input type="number" class="number" name="number_to_check" />
+                    </form>
+                    </div>
+                <div class="grid-item">
+                    <p>{{ message }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item"></div>
+    </div>
+    <p class="auth">
+        Made by Oleh Perlovskiy
+    </p>
+</body>
+</html>

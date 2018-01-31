@@ -1,0 +1,55 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Number</title>
+    <link href="/static/images/favicon.png" rel="shortcut icon" type="image/x-icon.png"/>
+    <link href="/static/main_test.css" type="text/css"
+    rel="stylesheet" />
+</head>
+<body>
+    <!--MENU -->
+    <div class="menu">
+        <div class="grid-item"></div>
+        <div class="grid-item" id="home" style="text-align: center">
+            <a href="/srcnum/" class="menu">HOME</a>
+        </div>
+        <div class="grid-item" id="home" style="text-align: center">
+            <a href="/srcnum/contacts/" class="menu">Contacts</a>
+        </div>
+        <div class="grid-item" id="home" style="text-align: center">
+            <a href="/srcnum/about/" class="menu">About</a>
+        </div>
+    </div>
+
+    <div id="grid">
+        <div class="grid-item"></div>
+        <div class="grid-item" id="home">
+            <h1 class="contact">
+                Oleh Perlovskiy
+            </h1>
+            <p class="cont">
+                Main developer of this site
+            </p>
+            <br>
+             <img src="/static/images/g.png" alt="" width="25" height="25" class="con_img">
+            <p class="about">
+                Mail: <a href="mailto: mupastir@gmail.com">mupastir@gmail.com</a>
+            </p>
+            <br>
+            <img src="/static/images/t.png" alt="" width="25" height="25" class="con_img">
+            <p class="about">
+                Telegram: <a href="https://t.me/mupastir">@mupastir</a>
+            </p>
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item" id="home"></div>
+        <div class="grid-item"></div>
+    </div>
+    <p class="auth">
+        Made by Oleh Perlovskiy
+    </p>
+</body>
+</html>
